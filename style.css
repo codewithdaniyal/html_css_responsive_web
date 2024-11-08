@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.navsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #000;
+    height: 10vh;
+}
+
+.logo h1 {
+    color: #ff0000;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+.home-section {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #fff;
+}
+
+.leftside {
+    color: #000;
+    max-width: 50%;
+}
+
+.leftside h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.leftside h1 {
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.leftside h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    color: #000;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn1,
+.btn2 {
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn1 {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.btn1:hover {
+    background-color: #000;
+}
+
+.btn2 {
+    color: #ff0000;
+    background-color: #fff;
+    border: 2px solid #ff0000;
+}
+
+.btn2:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.rightside img {
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.content-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.post h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ff0000;
+}
+
+.post p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-section {
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+}
+
+.contact-section p {
+    font-size: 18px;
+}
+
+/* Typewriter effect for h1 */
+.typewriter-h1 {
+    overflow: hidden; /* Ensures the text is hidden when it overflows */
+    border-right: 3px solid #000; /* Adds a blinking cursor */
+    white-space: nowrap; /* Keeps text on one line */
+    letter-spacing: 0.15em; /* Optional: Adjust letter spacing */
+    animation: typingH1 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typewriter effect for h2 */
+.typewriter-h2 {
+    overflow: hidden;
+    border-right: 3px solid #000;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typingH2 4s steps(30, end), blink-caret 0.75s step-end infinite;
+    animation-delay: 3s; /* Delay to start after h1 completes */
+}
+
+/* Typing keyframe animations */
+@keyframes typingH1 {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes typingH2 {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Blinking cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
